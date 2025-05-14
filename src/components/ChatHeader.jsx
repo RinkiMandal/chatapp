@@ -13,7 +13,7 @@ const ChatHeader = ({ user, onBack }) => {
 
   return (
     <div className="flex items-center justify-between px-4 py-3 bg-white dark:bg-[#1f1f22] border-b border-gray-200 dark:border-gray-700 shadow-sm">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center md:gap-4 gap-3">
         <button
           onClick={onBack}
           className="md:hidden text-2xl text-gray-600 dark:text-gray-300 hover:text-blue-500 transition"
@@ -23,14 +23,14 @@ const ChatHeader = ({ user, onBack }) => {
 
         <img
           src={user.avatar}
-          className="w-10 h-10 rounded-full"
+          className="md:w-10 md:h-10 w-9 h-9 rounded-full"
           alt={user.name}
         />
         <div>
-          <h2 className="text-lg font-semibold text-gray-800 dark:text-white">
+          <h2 className="md:text-lg text-sm font-semibold text-gray-800 dark:text-white">
             {user.name}
           </h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+          <p className="md:text-sm text-xs text-gray-500 dark:text-gray-400">
             {isOnline ? (
               <span className="text-green-500">Online</span>
             ) : (

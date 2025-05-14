@@ -1,20 +1,17 @@
-import React, { useState } from "react";
-import { FiPaperclip, FiSmile, FiMic } from "react-icons/fi"; // You can install react-icons for these
+import { useState } from "react";
+import { FiPaperclip, FiSmile, FiMic } from "react-icons/fi";
 
 const ChatInput = () => {
   const [message, setMessage] = useState("");
 
-  // Function to handle message input change
   const handleChange = (e) => {
     setMessage(e.target.value);
   };
 
-  // Function to handle sending the message
   const handleSend = () => {
     if (message.trim()) {
-      // Send the message logic here
       console.log("Message Sent: ", message);
-      setMessage(""); // Clear message input
+      setMessage("");
     }
   };
 

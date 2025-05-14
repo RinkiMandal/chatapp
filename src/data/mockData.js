@@ -96,128 +96,281 @@ export const users = [
   },
 ];
 
-
-
-
 export const messagesData = {
   1: [
-    { sender: "me", text: "Hey Alice! How was the meeting today?", timestamp: "2:00 PM" },
-    { sender: "Alice", text: "It went really well. We closed the deal!", timestamp: "2:05 PM" },
-    { sender: "me", text: "That’s amazing 🎉 So proud of you!", timestamp: "2:07 PM" },
-    { sender: "Alice", text: "Thanks! Let’s catch up over coffee?", timestamp: "2:15 PM" },
+    {
+      sender: "me",
+      text: "Hey Alice! How was the meeting today?",
+      timestamp: "2:00 PM",
+    },
+    {
+      sender: "Alice",
+      text: "It went really well. We closed the deal!",
+      timestamp: "2:05 PM",
+    },
+    {
+      sender: "me",
+      text: "That’s amazing 🎉 So proud of you!",
+      timestamp: "2:07 PM",
+    },
+    {
+      sender: "Alice",
+      text: "Thanks! Let’s catch up over coffee?",
+      timestamp: "2:15 PM",
+    },
     { sender: "me", text: "Absolutely, say when.", timestamp: "2:20 PM" },
-    { sender: "Alice", text: "How about Friday evening?", timestamp: "2:22 PM" },
-    { sender: "me", text: "Works for me. Excited already!", timestamp: "2:25 PM" },
-    { sender: "Alice", text: "Awesome! Let’s pick a place.", timestamp: "2:27 PM" },
-    { sender: "me", text: "How about the café near 5th Avenue?", timestamp: "2:28 PM" },
-    { sender: "Alice", text: "Perfect. See you soon!", timestamp: "2:30 PM" }
+    {
+      sender: "Alice",
+      text: "How about Friday evening?",
+      timestamp: "2:22 PM",
+    },
+    {
+      sender: "me",
+      text: "Works for me. Excited already!",
+      timestamp: "2:25 PM",
+    },
+    {
+      sender: "Alice",
+      text: "Awesome! Let’s pick a place.",
+      timestamp: "2:27 PM",
+    },
+    {
+      sender: "me",
+      text: "How about the café near 5th Avenue?",
+      timestamp: "2:28 PM",
+    },
+    { sender: "Alice", text: "Perfect. See you soon!", timestamp: "2:30 PM" },
   ],
   2: [
-    { sender: "Bob", text: "Hey, are you coming to the team lunch?", timestamp: "1:20 PM" },
-    { sender: "me", text: "Thinking about it. Who all are going?", timestamp: "1:22 PM" },
-    { sender: "Bob", text: "Almost everyone. Even Julia is in.", timestamp: "1:25 PM" },
+    {
+      sender: "Bob",
+      text: "Hey, are you coming to the team lunch?",
+      timestamp: "1:20 PM",
+    },
+    {
+      sender: "me",
+      text: "Thinking about it. Who all are going?",
+      timestamp: "1:22 PM",
+    },
+    {
+      sender: "Bob",
+      text: "Almost everyone. Even Julia is in.",
+      timestamp: "1:25 PM",
+    },
     { sender: "me", text: "Whoa! Then I’m in too 😄", timestamp: "1:27 PM" },
-    { sender: "Bob", text: "Sweet. I’ll add you to the group.", timestamp: "1:30 PM" },
-    { sender: "me", text: "Thanks! Also, did you finish the deck?", timestamp: "1:33 PM" },
-    { sender: "Bob", text: "Almost done. Just tweaking the summary.", timestamp: "1:38 PM" },
-    { sender: "me", text: "Cool. Need help proofreading?", timestamp: "1:40 PM" },
+    {
+      sender: "Bob",
+      text: "Sweet. I’ll add you to the group.",
+      timestamp: "1:30 PM",
+    },
+    {
+      sender: "me",
+      text: "Thanks! Also, did you finish the deck?",
+      timestamp: "1:33 PM",
+    },
+    {
+      sender: "Bob",
+      text: "Almost done. Just tweaking the summary.",
+      timestamp: "1:38 PM",
+    },
+    {
+      sender: "me",
+      text: "Cool. Need help proofreading?",
+      timestamp: "1:40 PM",
+    },
     { sender: "Bob", text: "Sure, let me check.", timestamp: "1:45 PM" },
-    { sender: "me", text: "Ping me whenever you’re ready.", timestamp: "1:46 PM" }
+    {
+      sender: "me",
+      text: "Ping me whenever you’re ready.",
+      timestamp: "1:46 PM",
+    },
   ],
   3: [
     { sender: "Charlie", text: "I’ll get back to you.", timestamp: "3:10 PM" },
     { sender: "me", text: "No worries, take your time!", timestamp: "3:12 PM" },
-    { sender: "Charlie", text: "Thanks for being patient.", timestamp: "3:15 PM" },
-    { sender: "me", text: "Of course! Let me know if you need anything.", timestamp: "3:18 PM" },
+    {
+      sender: "Charlie",
+      text: "Thanks for being patient.",
+      timestamp: "3:15 PM",
+    },
+    {
+      sender: "me",
+      text: "Of course! Let me know if you need anything.",
+      timestamp: "3:18 PM",
+    },
     { sender: "Charlie", text: "Will do! Talk soon.", timestamp: "3:20 PM" },
     { sender: "me", text: "Take care!", timestamp: "3:25 PM" },
     { sender: "Charlie", text: "You too!", timestamp: "3:30 PM" },
     { sender: "me", text: "Have a great day!", timestamp: "3:35 PM" },
     { sender: "Charlie", text: "You as well!", timestamp: "3:40 PM" },
-    { sender: "me", text: "Looking forward to catching up!", timestamp: "3:45 PM" }
+    {
+      sender: "me",
+      text: "Looking forward to catching up!",
+      timestamp: "3:45 PM",
+    },
   ],
   4: [
     { sender: "Diana", text: "Looking forward to it!", timestamp: "12:30 PM" },
     { sender: "me", text: "Me too! Should be fun.", timestamp: "12:35 PM" },
-    { sender: "Diana", text: "Absolutely! Let’s get something done.", timestamp: "12:40 PM" },
-    { sender: "me", text: "For sure, let's make it productive!", timestamp: "12:45 PM" },
-    { sender: "Diana", text: "Definitely! I’ll bring the coffee.", timestamp: "12:50 PM" },
+    {
+      sender: "Diana",
+      text: "Absolutely! Let’s get something done.",
+      timestamp: "12:40 PM",
+    },
+    {
+      sender: "me",
+      text: "For sure, let's make it productive!",
+      timestamp: "12:45 PM",
+    },
+    {
+      sender: "Diana",
+      text: "Definitely! I’ll bring the coffee.",
+      timestamp: "12:50 PM",
+    },
     { sender: "me", text: "I’m on my way now!", timestamp: "12:55 PM" },
     { sender: "Diana", text: "Perfect, see you soon!", timestamp: "1:00 PM" },
     { sender: "me", text: "Excited!", timestamp: "1:05 PM" },
     { sender: "Diana", text: "Same here!", timestamp: "1:10 PM" },
-    { sender: "me", text: "Let’s catch up over lunch after?", timestamp: "1:15 PM" }
+    {
+      sender: "me",
+      text: "Let’s catch up over lunch after?",
+      timestamp: "1:15 PM",
+    },
   ],
   5: [
     { sender: "me", text: "Thanks for the update.", timestamp: "9:50 AM" },
-    { sender: "Evan", text: "No problem! Let me know if you need more.", timestamp: "9:52 AM" },
+    {
+      sender: "Evan",
+      text: "No problem! Let me know if you need more.",
+      timestamp: "9:52 AM",
+    },
     { sender: "me", text: "I will, thanks again!", timestamp: "9:55 AM" },
-    { sender: "Evan", text: "Anytime! Always happy to help.", timestamp: "9:58 AM" },
+    {
+      sender: "Evan",
+      text: "Anytime! Always happy to help.",
+      timestamp: "9:58 AM",
+    },
     { sender: "me", text: "I appreciate it!", timestamp: "10:00 AM" },
-    { sender: "Evan", text: "Of course! Stay in touch.", timestamp: "10:05 AM" },
+    {
+      sender: "Evan",
+      text: "Of course! Stay in touch.",
+      timestamp: "10:05 AM",
+    },
     { sender: "me", text: "Definitely!", timestamp: "10:10 AM" },
     { sender: "Evan", text: "Catch up later!", timestamp: "10:15 AM" },
     { sender: "me", text: "Sure, talk soon.", timestamp: "10:20 AM" },
-    { sender: "Evan", text: "Later!", timestamp: "10:25 AM" }
+    { sender: "Evan", text: "Later!", timestamp: "10:25 AM" },
   ],
   6: [
     { sender: "me", text: "Can you send me the file?", timestamp: "8:15 AM" },
     { sender: "Fiona", text: "I’ll send it right now!", timestamp: "8:20 AM" },
     { sender: "me", text: "Thanks a lot!", timestamp: "8:22 AM" },
     { sender: "Fiona", text: "No worries!", timestamp: "8:25 AM" },
-    { sender: "me", text: "Let me know if there are any issues.", timestamp: "8:30 AM" },
+    {
+      sender: "me",
+      text: "Let me know if there are any issues.",
+      timestamp: "8:30 AM",
+    },
     { sender: "Fiona", text: "Will do!", timestamp: "8:35 AM" },
     { sender: "me", text: "Great! Appreciate it.", timestamp: "8:40 AM" },
     { sender: "Fiona", text: "Always happy to help!", timestamp: "8:45 AM" },
     { sender: "me", text: "Thanks again!", timestamp: "8:50 AM" },
-    { sender: "Fiona", text: "Anytime!", timestamp: "8:55 AM" }
+    { sender: "Fiona", text: "Anytime!", timestamp: "8:55 AM" },
   ],
   7: [
     { sender: "George", text: "Got it, thanks!", timestamp: "6:45 PM" },
     { sender: "me", text: "Glad to hear!", timestamp: "6:47 PM" },
-    { sender: "George", text: "Let’s talk soon about the next steps.", timestamp: "6:50 PM" },
-    { sender: "me", text: "Definitely, let’s schedule a time.", timestamp: "6:55 PM" },
-    { sender: "George", text: "I’m free tomorrow after 3 PM.", timestamp: "7:00 PM" },
-    { sender: "me", text: "Sounds good. I’ll send a calendar invite.", timestamp: "7:05 PM" },
+    {
+      sender: "George",
+      text: "Let’s talk soon about the next steps.",
+      timestamp: "6:50 PM",
+    },
+    {
+      sender: "me",
+      text: "Definitely, let’s schedule a time.",
+      timestamp: "6:55 PM",
+    },
+    {
+      sender: "George",
+      text: "I’m free tomorrow after 3 PM.",
+      timestamp: "7:00 PM",
+    },
+    {
+      sender: "me",
+      text: "Sounds good. I’ll send a calendar invite.",
+      timestamp: "7:05 PM",
+    },
     { sender: "George", text: "Perfect!", timestamp: "7:10 PM" },
     { sender: "me", text: "Looking forward to it!", timestamp: "7:15 PM" },
     { sender: "George", text: "Me too!", timestamp: "7:20 PM" },
-    { sender: "me", text: "Great, I’ll see you then.", timestamp: "7:25 PM" }
+    { sender: "me", text: "Great, I’ll see you then.", timestamp: "7:25 PM" },
   ],
   8: [
     { sender: "Helen", text: "I’ll call you later.", timestamp: "4:20 PM" },
     { sender: "me", text: "Okay, I’ll be waiting.", timestamp: "4:25 PM" },
-    { sender: "Helen", text: "Just finishing something up.", timestamp: "4:30 PM" },
+    {
+      sender: "Helen",
+      text: "Just finishing something up.",
+      timestamp: "4:30 PM",
+    },
     { sender: "me", text: "No rush, take your time.", timestamp: "4:35 PM" },
-    { sender: "Helen", text: "Thanks for understanding.", timestamp: "4:40 PM" },
+    {
+      sender: "Helen",
+      text: "Thanks for understanding.",
+      timestamp: "4:40 PM",
+    },
     { sender: "me", text: "Of course!", timestamp: "4:45 PM" },
-    { sender: "Helen", text: "I’ll call you in 5 minutes.", timestamp: "4:50 PM" },
+    {
+      sender: "Helen",
+      text: "I’ll call you in 5 minutes.",
+      timestamp: "4:50 PM",
+    },
     { sender: "me", text: "Got it, talk soon!", timestamp: "4:55 PM" },
     { sender: "Helen", text: "See you soon!", timestamp: "5:00 PM" },
-    { sender: "me", text: "Looking forward to it.", timestamp: "5:05 PM" }
+    { sender: "me", text: "Looking forward to it.", timestamp: "5:05 PM" },
   ],
   9: [
-    { sender: "Isaac", text: "Let's schedule a meeting.", timestamp: "7:05 PM" },
+    {
+      sender: "Isaac",
+      text: "Let's schedule a meeting.",
+      timestamp: "7:05 PM",
+    },
     { sender: "me", text: "Sure, when works for you?", timestamp: "7:10 PM" },
     { sender: "Isaac", text: "How about 3 PM tomorrow?", timestamp: "7:15 PM" },
     { sender: "me", text: "Sounds good to me.", timestamp: "7:20 PM" },
-    { sender: "Isaac", text: "Great! I’ll send a invite.", timestamp: "7:25 PM" },
-    { sender: "me", text: "Thanks, looking forward to it!", timestamp: "7:30 PM" },
+    {
+      sender: "Isaac",
+      text: "Great! I’ll send a invite.",
+      timestamp: "7:25 PM",
+    },
+    {
+      sender: "me",
+      text: "Thanks, looking forward to it!",
+      timestamp: "7:30 PM",
+    },
     { sender: "Isaac", text: "Me too!", timestamp: "7:35 PM" },
     { sender: "me", text: "Catch you later!", timestamp: "7:40 PM" },
     { sender: "Isaac", text: "Talk soon!", timestamp: "7:45 PM" },
-    { sender: "me", text: "Bye for now!", timestamp: "7:50 PM" }
+    { sender: "me", text: "Bye for now!", timestamp: "7:50 PM" },
   ],
   10: [
-    { sender: "Jackie", text: "I'll be there in 10 minutes.", timestamp: "5:25 PM" },
+    {
+      sender: "Jackie",
+      text: "I'll be there in 10 minutes.",
+      timestamp: "5:25 PM",
+    },
     { sender: "me", text: "Great, I’ll be waiting.", timestamp: "5:30 PM" },
     { sender: "Jackie", text: "Just finishing up.", timestamp: "5:35 PM" },
     { sender: "me", text: "No worries, take your time.", timestamp: "5:40 PM" },
-    { sender: "Jackie", text: "Thanks for being patient.", timestamp: "5:45 PM" },
+    {
+      sender: "Jackie",
+      text: "Thanks for being patient.",
+      timestamp: "5:45 PM",
+    },
     { sender: "me", text: "Of course, take your time.", timestamp: "5:50 PM" },
     { sender: "Jackie", text: "Almost there!", timestamp: "5:55 PM" },
     { sender: "me", text: "I’m ready!", timestamp: "6:00 PM" },
     { sender: "Jackie", text: "See you soon!", timestamp: "6:05 PM" },
-    { sender: "me", text: "Excited to catch up!", timestamp: "6:10 PM" }
-  ]
+    { sender: "me", text: "Excited to catch up!", timestamp: "6:10 PM" },
+  ],
 };

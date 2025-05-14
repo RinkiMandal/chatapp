@@ -14,8 +14,10 @@ function App() {
 
   return (
     <div className={`${darkMode ? "dark" : ""}`}>
-      <div className="flex h-screen bg-[#E7F9F9] dark:bg-[#121212] text-gray-900 dark:text-gray-100 transition">
-        <div className={` ${selectedUserId ? "hidden md:block" : "block"}`}>
+      <div className="flex h-screen md:bg-[#E7F9F9] bg-[#2DCACF]  dark:bg-[#121212] text-gray-900 dark:text-gray-100 transition">
+        <div
+          className={`${selectedUserId ? "hidden md:block" : "block w-full"}  `}
+        >
           <Sidebar
             activeChatId={selectedUserId}
             onSelectChat={setSelectedUserId}
