@@ -3,6 +3,7 @@ import { FiPaperclip, FiSmile, FiMic } from "react-icons/fi";
 
 const ChatInput = () => {
   const [message, setMessage] = useState("");
+  const [isTyping, setIsTyping] = useState(false);
 
   const handleChange = (e) => {
     setMessage(e.target.value);
@@ -16,8 +17,12 @@ const ChatInput = () => {
   };
 
   return (
-    <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-[#1e1f23]">
-      <div className="flex items-center gap-2">
+    <div className="border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-[#1e1f23]">
+      {isTyping && (
+        <div className="text-sm text-gray-500 px-4 pt-2">You are typing...</div>
+      )}
+
+      <div className="p-4 flex items-center gap-2">
         <button className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white">
           <FiPaperclip size={20} />
         </button>
@@ -30,6 +35,8 @@ const ChatInput = () => {
           rows={1}
           value={message}
           onChange={handleChange}
+          onFocus={() => setIsTyping(true)}
+          onBlur={() => setIsTyping(false)}
           placeholder="Type a message"
           className="flex-1 resize-none bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white p-2 rounded-md focus:outline-none overflow-hidden scrollbar-thin"
         />
