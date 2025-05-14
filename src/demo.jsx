@@ -10,12 +10,17 @@ function App() {
   const selectedUser = users.find((user) => user.id === selectedUserId);
   const messages = messagesData[selectedUserId] || [];
 
-  const handleBack = () => setSelectedUserId(null);
+  const handleBack = () => setSelectedUserId(null); // Back from chat on mobile
 
   return (
     <div className={`${darkMode ? "dark" : ""}`}>
       <div className="flex h-screen bg-[#E7F9F9] dark:bg-[#121212] text-gray-900 dark:text-gray-100 transition">
-        <div className={` ${selectedUserId ? "hidden md:block" : "block"}`}>
+        {/* Sidebar: hide on mobile if chat selected */}
+        <div
+          className={`w-full md:w-[300px] ${
+            selectedUserId ? "hidden md:block" : "block"
+          }`}
+        >
           <Sidebar
             activeChatId={selectedUserId}
             onSelectChat={setSelectedUserId}
@@ -24,16 +29,15 @@ function App() {
           />
         </div>
 
+        {/* ChatWindow: hide on mobile if no user selected */}
         <div
-          className={`flex-1 h-screen overflow-hidden ${
-            selectedUserId ? "block" : "hidden"
-          } md:block`}
+          className={`flex-1 ${selectedUserId ? "block" : "hidden"} md:block`}
         >
           {selectedUser ? (
             <ChatWindow
               user={selectedUser}
               messages={messages}
-              onBack={handleBack}
+              onBack={handleBack} // Passing the handleBack function
             />
           ) : (
             <div className="flex h-full items-center justify-center text-gray-500 dark:text-gray-400 text-lg">
